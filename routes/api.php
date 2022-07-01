@@ -23,5 +23,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/auth/logout', [AuthController::class, 'logout']);
 
     Route::get('/users', [UserController::class, 'index']);
+
 });
 
